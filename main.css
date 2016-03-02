@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    background-color: black;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+header {
+    color: white;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url('images/paint.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+}
+
+header h1,
+header p {
+    position: absolute;
+    transform: translate(-50%, 0);
+    left: 50%;
+    width: 1000px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    top: 30%;
+}
+
+header p {
+    top: 42%;
+}
+
+header nav {
+    text-align: center;
+    transform: translate(-50%, 0);
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+}
+
+nav {
+    list-style-type: none;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+div#introFrame {
+    margin: auto;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 95%;
+    height: 90vh;
+    border: solid white 10px;
+}
+
+body section {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+section h1,
+section p,
+section h2 {
+    position: absolute;
+}
+
+section#featured h1 {
+    font-size: 64px;
+    top: 30px;
+}
+
+section#featured p {
+    width: 300px;
+    top: 170px;
+}
+
+section#featured h2 {
+    font-size: 30px;
+    top: 130px;
+}
+
+section#featured {
+    background-color: #FEE850;
+    color: #3B3B3B;
+    z-index: 2;
+}
+
+section#featured h1,
+section#featured p,
+section#featured h2 {
+    left: 40px;
+}
+
+section#categories {
+    z-index: 2;
+    background-color:#3B3B3B ;
+}
+
+section#categories h2 {
+    text-align: center;
+    width: 100%;
+    font-size: 54px;
+    background-color: #FEE850;
+    color: #3B3B3B;
+    height: 63px;
+}
+
+section#categories nav {
+    width: 100%;
+    height: 91vh;
+    position: absolute;
+    bottom: 0px;
+}
+
+section#categories nav ul li {
+    margin: auto;
+    width: 33.3%;
+    height: 45vh;
+    float: left;
+}
+
+section#categories nav ul li {
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+
+section#categories nav ul li p,
+section#categories nav ul li div {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+}
+
+section#categories nav ul li p {
+    font-size: 34px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    width: 300px;
+    height: 120px;
+    top: 45%;
+    padding-bottom: 0px;
+}
+
+section#categories nav ul li div {
+    width: 180px;
+    height: 0;
+    border-bottom: solid white 6px;
+    top: 70%;
+}
+
+section#categories nav ul li:nth-child(1) {
+    background-image: url(images/paint.png);
+}
+
+section#categories nav ul li:nth-child(2) {
+    background-image: url(images/science.jpg);
+}
+
+
+/*!!!note to self: make sure you go back and change these images*/
+
+section#categories nav ul li {
+    background-image: url(images/science.jpg);
+}
+
+section div {
+    float: left;
+}
+
+section div ul li {
+    list-style-type: none;
+}
+
+section div.image {
+    width: 60%;
+    height: 100vh;
+    background-image: url(images/paint.jpg);
+    background-position: 70% 0%;
+    background-size: 1010px;
+    background-repeat: no-repeat;
+}
+
+section div.infoBlue {
+    background-color: #5BDEFF;
+}
+
+section div.infoYellow {
+    background-color: #FEE850;
+}
+
+section div {
+    width: 40%;
+    height: 100vh;
+    position: relative;
+    color: #3B3B3B;
+}
+
+section div h3,
+section div p,
+section div ul {
+    position: absolute;
+    width: 300px;
+    transform: translate(-50%, 0);
+}
+
+section div h3 {
+    top: 40px;
+    left: 50%;
+    text-align: center;
+    font-size: 30px;
+}
+
+section div p {
+    top: 130px;
+    left: 50%;
+}
+
+section div ul {
+    top: 440px;
+    left: 50%;
+}
+
+li.title {
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    background-color: #5BDEFF;
+}
+
+section#resources {
+    height: 500px;
+    text-align: center;
+    position: relative;
+}
+
+section#resources nav {
+    position: absolute;
+    transform: translate(-50%,0);
+    top: 13%;
+    left: 50%;
+}
+
+section#resources nav ul li h3{
+    font-family: 'Montserrat', sans-serif;
+    width: 250px;
+    color: #3B3B3B;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #3B3B3B;
+    font-size: 12px;
+    height: 180px;
+    line-height: 20px;
+}
+
+footer div {
+    width: 33%;
+    float: left;
+}
+
+footer h4 {
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #FEE850;
+}
+
+footer nav {
+    margin-left: 20px;
+}
+
+/*BAR DIVIDER THINGS*/
+section.divider {
+    height: 20px;
+    background-color:#3B3B3B; 
+}
+
+img#backtotop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+    
+}
+
+
+/*font-family: 'Muli', sans-serif;*/
