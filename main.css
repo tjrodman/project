@@ -93,6 +93,8 @@ section h1,
 section p,
 section h2 {
     position: absolute;
+    left: 40px;
+    color: white;
 }
 
 section#featured h1 {
@@ -114,11 +116,14 @@ section#featured {
     background-color: #FEE850;
     color: #3B3B3B;
     z-index: 2;
+    background-image: url(images/students.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-section#featured h1,
-section#featured p,
-section#featured h2 {
+section#featured iframe {
+    position: absolute;
+    top: 40%;
     left: 40px;
 }
 
@@ -162,6 +167,7 @@ section#categories nav ul li div {
     position: absolute;
     transform: translate(-50%,-50%);
     left: 50%;
+/*    visibility: hidden;*/
 }
 
 section#categories nav ul li p {
@@ -172,6 +178,7 @@ section#categories nav ul li p {
     height: 120px;
     top: 45%;
     padding-bottom: 0px;
+    
 }
 
 section#categories nav ul li div {
@@ -182,18 +189,27 @@ section#categories nav ul li div {
 }
 
 section#categories nav ul li:nth-child(1) {
-    background-image: url(images/paint.png);
+    background-image: url(images/cat_paint_1.jpg);
 }
 
 section#categories nav ul li:nth-child(2) {
-    background-image: url(images/science.jpg);
+    background-image: url(images/cat_science.jpg);
 }
 
+section#categories nav ul li:nth-child(3) {
+    background-image: url(images/cat_culture.jpg);
+}
 
-/*!!!note to self: make sure you go back and change these images*/
+section#categories nav ul li:nth-child(4) {
+    background-image: url(images/cat_government.jpg);
+}
 
-section#categories nav ul li {
-    background-image: url(images/science.jpg);
+section#categories nav ul li:nth-child(5) {
+    background-image: url(images/cat_food.jpg);
+}
+
+section#categories nav ul li:nth-child(6) {
+    background-image: url(images/cat_sports.jpg);
 }
 
 section div {
@@ -249,7 +265,7 @@ section div p {
 }
 
 section div ul {
-    top: 440px;
+    top: 300px;
     left: 50%;
 }
 
@@ -307,6 +323,7 @@ footer nav {
 section.divider {
     height: 20px;
     background-color:#3B3B3B; 
+    z-index: 0;
 }
 
 img#backtotop {
