@@ -7,9 +7,9 @@
     <meta name="description" content="Let's look at some stuff yo!">
     <link rel="stylesheet" href="main.css">
     <!--Google Fonts-->
-    <link href='https://fonts.googleapis.com/css?family=Muli:300,400|Montserrat:400,700' rel='stylesheet' type='text/css'>
-    
-   <!--css link-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+
+    <!--css link-->
     <link type="text/css" href="main.css" rel="stylesheet">
 
     <!--js links-->
@@ -18,280 +18,181 @@
 
     <!--custom js-->
     <script type="text/javascript" src="js/project.js"></script>
+
+    <!-- jQuery library (served from Google) -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <!-- bxSlider Javascript file -->
+    <script src="js/jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="jquery.bxslider.css" rel="stylesheet" />
+
 </head>
 
 <body>
     <header>
-        <h1>FIRST-YEAR SEMINAR</h1>
-        <p>A unique experience dedicated to new, exploring students at UC Davis.</p>
-
         <nav>
-            <li>
-                <a href='#'><img src='images/arrow.png' alt='button' width=15></a>
-            </li>
-            <li>
-                <a href='#'><img src='images/arrow.png' alt='button' width=15></a>
-            </li>
+            <ul>
+                <li><a href='#'><em>FIRST YEAR SEMINARS</em> AT UC DAVIS</a>
+                </li>
+            </ul>
         </nav>
 
-        <div id='introFrame'></div>
-
+        <nav id='tabs'>
+            <ul>
+                <li><a href='#'>ABOUT</a>
+                </li>
+                <li><a href='#'>BENEFITS</a>
+                </li>
+                <li><a href='#'>FEATURED SEMINARS</a>
+                </li>
+                <li><a href='#'>RESOURCES</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
+    <section class='slideshow'>
+        <!--to be centered and put over teh slideshow-->
+        <!--
+        <h1>First Year Seminars</h1>
+        <h1 id='subText'>at UC Davis</h1>
+-->
 
+        <ul class="bxslider">
+            
+            <li><img src="images/lecture.jpg" alt="First Year Seminar Intro" />
+            </li>
+            <li><img src="images/students_workshop.jpg" alt="workshops" />
+            </li>
 
-    <!--FEATURED SEMINAR-->
-    <section id='featured'>
-        <h1>FEATURED SEMINAR</h1>
-        <h2>How Do Rockets Fly?</h2>
-        <p>This class has many exciting lectures and allows students to explore the broad topics of aerospace dynamics while gaining hands on experience.</p>
-   <iframe width="320" src="https://www.youtube.com/embed/OCWj5xgu5Ng" frameborder="1" allowfullscreen></iframe>
-    
+        </ul>
+
     </section>
 
-    <!--CATEGORIES-->
-    <a name="categories"></a>
-
-    <section id='categories'>
-        <h2>CATEGORIES</h2>
-
-        <nav>
-            <ul>
-                <li>
-                    <a href='#arts'>
-                        <p>ARTS, WRITING, CREATIVE THINKING</p>
-                        <div></div>
-                    </a>
-                </li>
-                <li>
-                    <a href='#science'>
-                        <p>SCIENCE, RESEARCH, ENVIRONMENT</p>
-                        <div></div>
-                    </a>
-                </li>
-                <li>
-                    <a href='#lifestyle'>
-                        <p>LIFESTYLE, CULTURE, RELIGION</p>
-                        <div></div>
-                    </a>
-                </li>
-                <li>
-                    <a href='#government'>
-                        <p>GOVERNMENT, POLICY, EDUCATION</p>
-                        <div></div>
-                    </a>
-                </li>
-                <li>
-                    <a href='#food'>
-                        <p>FOOD AND CULINARY SCIENCES</p>
-                        <div></div>
-                    </a>
-                </li>
-                <li>
-                    <a href='#sports'>
-                        <p>SPORTS AND ENTERTAINMENT</p>
-                        <div></div>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+    <section id='what'>
+        <h2>What is a First Year Seminar?</h2>
+        <ul>
+            <li><img src='images/test.png'>
+                <p>Courses can range from 1-2 units either pass/no-pass or letter graded</p>
+            </li>
+            <li><img src='images/group.png'>
+                <p>First year seminars are courses open to first year students (with 45 units or less)</p>
+            </li>
+            <li><img src='images/speech.png'>
+                <p>Each seminar has a 19 student limit to allow for small group discussions and the ability to work closely with your professor</p>
+            </li>
+        </ul>
+        <div id='line1'></div>
+        <div id='line2'></div>
     </section>
-
-    <section class='divider'></section>
-
-    <!--SECTIONS-->
-    <!--anchor-->
-    <a name="arts"></a>
 
     <section>
-        <div class='image'></div>
-
-        <div class='infoYellow'>
-            <h3>Arts, Writing, Creative Thinking</h3>
-            <p>Learn about creative processes and philosophies of art. Courses range from hands on writing workshops to explorations of art and society.</p>
-
+        <div id='box'>
+            <h2>Benefits to First Year Seminars</h2>
             <ul>
-                <li class='title'>A Few Samples of Previous Courses</li>
-                <li>Creativity and the Creative Process</li>
-                <li>So You Think You Can Write</li>
-                <li>Occupy Art</li>
-                <li>Searching for Shakespeare's Soul</li>
-                <li>What's the Point of an Interpretation?</li>
-                <li>Kansas City: Jazz and Gangsters</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class='divider'></section>
-    <!--anchor-->
-    <a name="science"></a>
-
-    <section>
-        <div class='infoBlue'>
-            <h3>Science, Research, Environment</h3>
-            <p>Explore various topics ranging from population studies to environmental research. These courses are taught by some of UC Davis’s celebrated research faculty members.</p>
-
-            <ul>
-                <li class='title'>A Few Samples of Previous Courses</li>
-                <li>Symmetry in Art and Science</li>
-                <li>The Population Bomb</li>
-                <li>Computational Chaos</li>
-                <li>Nuclear Fusion: Limitless Non-fossil Energy Source on Earth</li>
-            </ul>
-        </div>
-
-        <div class='image'>
-        </div>
-    </section>
-
-    <section class='divider'></section>
-    <!--anchor-->
-    <a name="lifestyle"></a>
-
-    <section>
-        <div class='image'></div>
-
-        <div class='infoYellow'>
-            <h3>Lifestyle, Culture, Religion</h3>
-            <p>From Hebrew studies to queer cinema, these courses provide insight to healthy lifestyle practices and cultures across the world.</p>
-
-            <ul>
-                <li class='title'>A Few Samples of Previous Courses</li>
-                <li>Japanese Culture</li>
-                <li>Chaos, Complexity, Christianity</li>
-                <li>Intro to Bibical Hebrew</li>
-                <li>The Science of Well-Being</li>
-                <li>Mental Health in Academy Award Winning Movies</li>
-                <li>Queer Cinema</li>
-                <li>The Psychology of Love</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class='divider'></section>
-    <!--anchor-->
-    <a name="government"></a>
-
-    <section>
-        <div class='infoBlue'>
-            <h3>Government, Policy, Education</h3>
-            <p>Discover what goes on behind the scenes of large political events and government processes. Debate with fellow classmates about current national policies and how we could better our country.</p>
-
-            <ul>
-                <li class='title'>A Few Samples of Previous Courses</li>
-                <li>How Young People Can Take Over the World</li>
-                <li>Global Poverty: Thing Big Start Small</li>
-                <li>Comparative Citizenship Policy</li>
-                <li>Waging War, Waging Peace</li>
-                <li>So You Want to Go to Law School</li>
-            </ul>
-        </div>
-
-        <div class='image'>
-        </div>
-    </section>
-
-    <section class='divider'></section>
-    <!--anchor-->
-    <a name="food"></a>
-
-    <section>
-        <div class='image'></div>
-
-        <div class='infoYellow'>
-            <h3>Food and Culinary Sciences</h3>
-            <p>Explore the world of genetic modification and learn about its benefits and dangers. Dive into specialty topics that explore the science aspect of produce to help better understand food and its unique properties</p>
-
-            <ul>
-                <li class='title'>A Few Samples of Previous Courses</li>
-                <li>There is Life After Cheddar</li>
-                <li>Molecular Kitchen</li>
-                <li>Genetically Modi ed Organisms</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class='divider'></section>
-    <!--anchor-->
-    <a name="sports"></a>
-
-    <section>
-        <div class='infoBlue'>
-            <h3>Sports and Entertainment</h3>
-            <p>Learn about the business aspect of professional and youth sports. Discuss the significance and themes of the entertainment industry.</p>
-
-            <ul>
-                <li class='title'>A Few Samples of Previous Courses</li>
-                <li>Topics in Youth Sports</li>
-                <li>Mad About Mad Men</li>
-                <li>History of Motion Pictures</li>
-                <li>Zombies</li>
-                <li>San Andreas: Reality vs. Hollywood</li>
-                <li>The History and Business of the NFL</li>
-            </ul>
-        </div>
-        <div class='image'></div>
-    </section>
-
-    <section class='divider'></section>
-    <!--anchor-->
-    <a name="resources"></a>
-
-    <!--ending page-->
-    <section id='resources'>
-        <nav>
-            <ul>
-                <li>
-                    <a href='http://fys.ucdavis.edu/student/' target="_blank"><img src='images/watertower.png' alt='resources' width=200></a>
+                <li><img src='images/benefit_meet.png' width=150>
+                    <p>Utilize this excellent opportunity to meet new people and form connections</p>
                 </li>
-                <li><a href='#'><h3>UC Davis Resource Page and FAQs</h3></a></li>
+                <li><img src='images/benefit_introduce.png' width=150>
+                    <p>Introduce yourself to new topics without having a large course load</p>
+                </li>
+                <li><img src='images/benefit_lab.png'>
+                    <p>Gain hands on experience in various labs and outdoor experience</p>
+                </li>
             </ul>
-        </nav>
+        </div>
+
+
+    </section>
+
+    <section id='seminars'>
+        <ul class="bxslider">
+            <li>
+                <h2>There's Life after Cheddar</h2>
+                <h3>Food and Culinary Sciences</h3>
+                <p>You cheddar believe it!</p>
+                <p>Did you know that cheese was never meant to be made or consumed by humans? In case you're still in disbelief, yes, this class is all about cheese!</p>
+            </li>
+        </ul>
+
+
+    </section>
+
+    <section id='now'>
+        <h2>There's No Better Time Than Now</h2>
+        <p id='nowP'>There are over 200 first year seminars to choose from and new seminars are offered every quarter!</p>
+
+        <div id='box2'>
+            <ul>
+                <li><img src='images/one.png'>
+                    <p>Find a specific course via the UC Davis course search tool</p>
+                    <a href='https://registrar.ucdavis.edu/courses/search/index.cfm' target="_blank">GO!</a>
+                </li>
+                <li><img src='images/two.png'>
+                    <p>Copy or write down the 5-digit CRN number</p>
+                </li>
+                <li><img src='images/three.png'>
+                    <p>Use 5-digit CRN number to register via UC Davis course register website</p>
+                    <a href='https://sisweb.ucdavis.edu' target="_blank">SISWEB</a>
+                </li>
+            </ul>
+        </div>
     </section>
 
     <footer>
-        <div>
-            <h4>CATEGORIES</h4>
+        <nav>
+            <ul>
+                <li>
+                    <h5>NAVIGATE</h5>
+                </li>
+                <li>
+                    <a href='#'>About</a>
+                </li>
+                <li>
+                    <a href='#'>Benefits</a>
+                </li>
+                <li>
+                    <a href='#'>Featured Seminars</a>
+                </li>
+                <li>
+                    <a href='#'>Resources</a>
+                </li>
+            </ul>
+        </nav>
 
-            <nav>
-                <ul>
-                    <li><a href='#arts'>Arts, Writing, Creative Thinking</a></li>
-                    <li><a href='#science'>Science, Research, Environment</a></li>
-                    <li><a href='#lifestyle'>Lifestyle, Culture, Religion</a></li>
-                    <li><a href='#government'>Government, Policy, Education</a></li>
-                    <li><a href='#food'>Food & Culinary Sciences</a></li>
-                    <li><a href='#sports'>Sports & Entertainment</a></li>
-                </ul>
-        </div>
+        <nav>
+            <ul>
+                <li>
+                    <h5>UC DAVIS LINKS</h5>
+                </li>
+                <li>
+                    <a href='http://fys.ucdavis.edu/student/'>First Year Seminar FAQs</a>
+                </li>
+                <li>
+                    <a href='https://registrar.ucdavis.edu/courses/search/index.cfm'>Course Search Tool</a>
+                </li>
+                <li>
+                    <a href='https://sisweb.ucdavis.edu'>Sisweb</a>
+                </li>
+            </ul>
+        </nav>
 
-        <div>
-            <h4>UC DAVIS LINKS</h4>
-            <nav>
-                <ul>
-                    <li><a href='http://fys.ucdavis.edu/student/' target='_blank'>First-Year Seminar FAQs</a></li>
-                </ul>
-        </div>
-
-        <div>
-            <h4>DES 157 CLASS LINKS</h4>
-            <nav>
-                <ul>
-                    <li><a href='https://tjrodman.github.io/ex1/'>Return to Portal</a></li>
-                    <li><a class="bottomSpace" target="_blank" href="http://validator.w3.org/check?uri=referer">Valid HTML5</a></li>
-                    <li><a class="bottomSpace" target="_blank" href="http://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></li>
-
-
-
-
-
-
-                </ul>
-        </div>
+        <nav>
+            <ul>
+                <li>
+                    <h5>DES 157</h5>
+                </li>
+                <li>
+                    <a href='https://tjrodman.github.io/ex1'>Back to Portal</a>
+                </li>
+                 <!--validation-->
+                <li> <a class="bottomSpace" target="_blank" href="http://validator.w3.org/check?uri=referer">VALID HTML 5</a></li>
+                <li><a class="bottomSpace" target="_blank" href="http://jigsaw.w3.org/css-validator/check/referer">VALID CSS</a></li>
+            </ul>
+        </nav>
     </footer>
 
-    <nav>
-        <a href='#categories'><img id='backtotop' src='images/backtoTop.png' alt='back to top'></a>
-    </nav>
+
 </body>
 
 </html>
