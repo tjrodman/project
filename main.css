@@ -200,29 +200,27 @@ section#featured {
     color: #cccccc;
 }
 
+section#featured section.bx-wrapper2{
+    
+}
+
 section#featured ul.bxslider li p {
     transform: translate(-50%, 0);
     margin-left: 50%;
+    width: 400px;
 }
 
 section#featured ul.bxslider li h2 {
     font-weight: 500;
     padding-top: 0px;
     margin-top: 20px;
+    width: 300px;
+    margin:auto;
 }
 
 section#featured h2 {
     margin-bottom: 20px;
 }
-
-section#featured ul.bxslider li h3 {
-    margin-top: -20px;
-}
-
-section#featured p {
-    width: 330px;
-}
-
 
 /*THERES NO BETTER TIME THAN NOW*/
 

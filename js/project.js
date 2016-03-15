@@ -21,11 +21,12 @@ $(document).ready(function () {
         setTimeout(intro, 1000);
     });
 
-    //fade into view
+    //ABOUT SECTION
+    
     //hide the things
     $('section#about ul li').css('visibility', 'hidden');
 
-
+    //fade into view
     $(window).scroll(function () {
         console.log($(window).scrollTop());
         var topDivHeight = $(".topdiv").height();
@@ -52,9 +53,16 @@ $(document).ready(function () {
         }
     });
 
+    //FEATURED
+    //when hovering over the featured section, animate the h2 titles
+    $('section#featured section.bx-wrapper2 ul.bxslider li h2').hover(function () {
+        $(this).addClass('animated tada');
+    }, function () {
+        $(this).removeClass('animated tada ');
 
+    });
 
-
+    //1,2,3 JINGLE
     //target the list, then only animate the image on hover
     $('section#resources div#box2 ul li').hover(
         function () {
@@ -63,14 +71,6 @@ $(document).ready(function () {
         function () {
             $(this).children('img').removeClass('animated swing ');
         });
-
-    //when hovering over the featured section, animate the h2 titles
-    $('section#featured section.bx-wrapper2 ul.bxslider li').hover(function () {
-        $(this).children('h2').addClass('animated tada');
-    }, function () {
-        $(this).children('h2').removeClass('animated tada ');
-
-    });
 
 
 
