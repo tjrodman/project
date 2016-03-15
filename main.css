@@ -10,9 +10,14 @@ body {
     font-weight: 300;
 }
 
+section#home{
+    height:0;
+    visibility: hidden;
+}
+
 em {
     font-style: oblique;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 header {
@@ -21,7 +26,7 @@ header {
     background-color: #69cce3;
     position: fixed;
     top: 0%;
-    z-index: 2;
+    z-index: 200;
 }
 
 header nav {
@@ -36,6 +41,7 @@ header nav ul li {
     padding: 10px 20px 10px 20px;
 }
 
+
 header nav ul li a {
     list-style-type: none;
     text-decoration: none;
@@ -47,11 +53,21 @@ header nav ul li a:hover {
     border-bottom: solid white;
     border-width: 3px;
 }
+header nav ul li a:active {
+    border-bottom: solid white;
+    color: #238fce;
+    border-width: 3px;
+}
 
 header nav#tabs {
     right: 0px;
 }
 
+
+header nav#blue ul li a{
+    font-weight: 300;
+    color: #238fce;
+}
 
 /*INTRODUCTION SLIDESHOW*/
 
@@ -216,7 +232,7 @@ section#featured p {
 
 /*THERES NO BETTER TIME THAN NOW*/
 
-section#now div#box2 {
+section#resources div#box2 {
     width: 850px;
     height: 350px;
     margin: auto;
@@ -228,7 +244,7 @@ section#now div#box2 {
     position: relative;
 }
 
-section#now div#box2 ul {
+section#resources div#box2 ul {
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -236,7 +252,7 @@ section#now div#box2 ul {
     width: 750px;
 }
 
-section#now div#box2 ul li a {
+section#resources div#box2 ul li a {
     width: 130px;
     height: 30px;
     padding-top: 10px;
@@ -250,7 +266,15 @@ section#now div#box2 ul li a {
     margin-top: 20px;
 }
 
-section#now p#nowP {
+section#resources div#box2 ul li a:hover{
+    background-color: #238fce;
+}
+
+section#resources div#box2 ul li a:active{
+    background-color: #0B689E;
+}
+
+section#resources p#nowP {
     position: absolute;
     transform: translate(-50%, 0);
     left: 50%;
@@ -284,4 +308,11 @@ footer nav ul li a {
     text-decoration: none;
     font-weight: 300;
     font-size: 12px;
+}
+
+footer nav ul li a:hover{
+    color: #DBDBDB;
+}
+footer nav ul li a:active{
+    color: #1DBFF5;
 }

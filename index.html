@@ -16,6 +16,8 @@
     <!--jQuery first-->
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 
+
+
     <!--custom js-->
     <script type="text/javascript" src="js/project.js"></script>
 
@@ -25,53 +27,54 @@
     <script src="js/jquery.bxslider.min.js"></script>
     <!-- bxSlider CSS file -->
     <link href="jquery.bxslider.css" rel="stylesheet" />
+    <!--anchor scrolling library-->
+    <script src="js/scroll.min.js"></script>
 
 </head>
 
 <body>
+    <section id='home'></section>
     <header>
-        <nav>
+        <nav id='blue'>
             <ul>
-                <li><a href='#'><em>FIRST YEAR SEMINARS</em> AT UC DAVIS</a>
+                <li><a class='scroll' href='#home'><em>FIRST YEAR SEMINARS</em> AT UC DAVIS</a>
                 </li>
             </ul>
         </nav>
 
         <nav id='tabs'>
             <ul>
-                <li><a href='#about'>ABOUT</a>
+                <li><a class='scroll' href='#about'>ABOUT</a>
                 </li>
-                <li><a href='#benefits'>BENEFITS</a>
+                <li><a class='scroll' href='#benefits'>BENEFITS</a>
                 </li>
-                <li><a href='#featured'>FEATURED SEMINARS</a>
+                <li><a class='scroll' href='#featured'>FEATURED SEMINARS</a>
                 </li>
-                <li><a href='#resources'>RESOURCES</a>
+                <li><a class='scroll' href='#resources'>RESOURCES</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <!--    <section class='slideshow'>-->
-    <section class='bx-wrapper'>
-        <div class='bx-controls-auto'></div>
 
-        <h2 class='bx-caption'>First Year Seminars</h2>
-        <p class='bx-caption-description'>At UC Davis</p>
-        <ul class="bxslider">
+        <section class='bx-wrapper'>
+            <div class='bx-controls-auto'></div>
 
-            <li><img src="images/intro_lecture.jpg" alt="First Year Seminar Intro" />
-            </li>
-            <li><img src="images/intro_workshop.jpg" alt="workshops" />
-            </li>
-            <li><img src="images/intro_paint.jpg" alt="workshops" />
-            </li>
+            <h2 class='bx-caption'>First Year Seminars</h2>
+            <p class='bx-caption-description'>At UC Davis</p>
+            <ul class="bxslider">
 
-        </ul>
+                <li><img src="images/intro_lecture.jpg" alt="First Year Seminar Intro" />
+                </li>
+                <li><img src="images/intro_workshop.jpg" alt="workshops" />
+                </li>
+                <li><img src="images/intro_paint.jpg" alt="workshops" />
+                </li>
 
+            </ul>
+        </section>
 
-    </section>
-
-    <a name="about"></a>
     <section id='about'>
         <h2>What is a First Year Seminar?</h2>
         <ul>
@@ -90,8 +93,7 @@
     </section>
 
 
-    <a name="benefits"></a>
-    <section>
+    <section id='benefits'>
         <div id='box'>
             <h2>Benefits to First Year Seminars</h2>
             <ul>
@@ -109,7 +111,6 @@
     </section>
 
 
-    <a name="featured"></a>
     <!--
     <section id='seminars'>
         <ul class="bxslider">
@@ -137,7 +138,7 @@
                     <p>You cheddar believe it!</p>
                     <p>Did you know that cheese was never meant to be made or consumed by humans? In case you're still in disbelief, yes, this class is all about cheese!</p>
                 </li>
-                
+
                 <li>
                     <img src='images/featured_zombies.png' alt='zombies' width=160>
                     <h2>Zombies</h2>
@@ -151,14 +152,14 @@
                     <h3>Lifestyle, Culture, Religion, Ethics</h3>
                     <p>Unfortunately, this course isn't taught by Walter White himself, but the course introduces students to critical thinking and ethical decision making using the popular television show, Breaking Bad. topics and discussions will ask questions like "what is right?" and "what is wrong?" as well as to what extent can the ends justify the means?</p>
                 </li>
-                
+
                 <li>
                     <img src='images/featured_airplane.png' alt='airplanes'>
                     <h2>How to Make Airplanes Fly</h2>
                     <h3>Science, Research, Environment</h3>
                     <p>Description</p>
                 </li>
-                
+
                 <li>
                     <img src='images/featured_art.png' alt='art'>
                     <h2>TBA</h2>
@@ -172,8 +173,7 @@
     </section>
 
 
-    <a name="resources"></a>
-    <section id='now'>
+    <section id='resources'>
         <h2>There's No Better Time Than Now</h2>
         <p id='nowP'>There are over 200 first year seminars to choose from and new seminars are offered every quarter!</p>
 
@@ -194,6 +194,8 @@
         </div>
     </section>
 
+  
+    
     <footer>
         <nav>
             <ul>
@@ -201,16 +203,16 @@
                     <h5>NAVIGATE</h5>
                 </li>
                 <li>
-                    <a href='#about'>About</a>
+                    <a class='scroll' href='#about'>About</a>
                 </li>
                 <li>
-                    <a href='#benefits'>Benefits</a>
+                    <a class='scroll' href='#benefits'>Benefits</a>
                 </li>
                 <li>
-                    <a href='#featured'>Featured Seminars</a>
+                    <a class='scroll' href='#featured'>Featured Seminars</a>
                 </li>
                 <li>
-                    <a href='#resources'>Resources</a>
+                    <a class='scroll' href='#resources'>Resources</a>
                 </li>
             </ul>
         </nav>
