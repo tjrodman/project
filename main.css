@@ -55,10 +55,6 @@ header nav#tabs {
 
 /*INTRODUCTION SLIDESHOW*/
 
-section.slideshow {
-    /*    height: 100vh;*/
-}
-
 section.slideshow h1 {
     font-size: 48px;
     font-weight: 300;
@@ -88,6 +84,10 @@ section h2 {
     padding-top: 80px;
 }
 
+section h3 {
+    font-weight: 300;
+}
+
 section p {
     width: 250px;
     font-size: 12px;
@@ -107,22 +107,26 @@ section ul li p {
 
 /*WHAT IS A FIRST YEAR SEMINAR*/
 
-section#what ul li {
+section#about {
+    z-index: -1;
+}
+
+section#about ul li {
     position: absolute;
     transform: translate(-50%, 0);
 }
 
-section#what ul li:nth-child(1) {
+section#about ul li:nth-child(1) {
     top: 55%;
     left: 15%;
 }
 
-section#what ul li:nth-child(2) {
+section#about ul li:nth-child(2) {
     top: 25%;
     left: 50%;
 }
 
-section#what ul li:nth-child(3) {
+section#about ul li:nth-child(3) {
     top: 55%;
     left: 85%;
 }
@@ -130,7 +134,7 @@ section#what ul li:nth-child(3) {
 
 /*DIAGONAL LINES*/
 
-section#what div#line1 {
+section#about div#line1 {
     width: 600px;
     border-bottom: 1px solid #cccccc;
     -webkit-transform: rotate(65deg);
@@ -139,7 +143,7 @@ section#what div#line1 {
     left: 4%;
 }
 
-section#what div#line2 {
+section#about div#line2 {
     width: 600px;
     border-bottom: 1px solid #cccccc;
     -webkit-transform: rotate(-65deg);
@@ -174,28 +178,44 @@ section div#box ul {
     height: 30px;
     width: 1200px;
     position: absolute;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
     left: 50%;
 }
 
 
 /*FEATURED SEMINARS SLIDESHOW*/
 
-section#seminars {
+section#featured {
     background-image: url(images/slideshow_bckg.png);
+    color: #cccccc;
 }
 
-section#seminars ul.bxslider li {
-    margin-top: 200px;
-}
-
-section#seminars ul.bxslider li p {
+section#featured ul.bxslider li p {
     transform: translate(-50%, 0);
     margin-left: 50%;
 }
 
+section#featured ul.bxslider li h2 {
+    font-weight: 500;
+    padding-top: 0px;
+    margin-top: 20px;
+}
+
+section#featured h2 {
+    margin-bottom: 20px;
+}
+
+section#featured ul.bxslider li h3 {
+    margin-top: -20px;
+}
+
+section#featured p {
+    width: 330px;
+}
+
 
 /*THERES NO BETTER TIME THAN NOW*/
+
 section#now div#box2 {
     width: 850px;
     height: 350px;
@@ -206,12 +226,11 @@ section#now div#box2 {
     border-color: #cccccc;
     border-width: 1px;
     position: relative;
-    
 }
 
 section#now div#box2 ul {
     position: absolute;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     width: 750px;
@@ -233,13 +252,15 @@ section#now div#box2 ul li a {
 
 section#now p#nowP {
     position: absolute;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
     left: 50%;
     margin-top: 10px;
     width: 300px;
 }
 
+
 /*FOOTER*/
+
 footer {
     background-color: #333333;
     height: 250px;
@@ -264,12 +285,3 @@ footer nav ul li a {
     font-weight: 300;
     font-size: 12px;
 }
-
-
-
-
-
-
-
-
-

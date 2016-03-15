@@ -18,24 +18,20 @@
 	position: relative;
 	margin: 0 auto 60px;
 	padding: 0;
+    max-height: 90vh;
 	*zoom: 1;
 }
 
 .bx-wrapper img {
 	max-width: 100%;
-	display: block;
 }
 
 /** THEME
 ===================================*/
 
 .bx-wrapper .bx-viewport {
-	-moz-box-shadow: 0 0 5px #ccc;
-	-webkit-box-shadow: 0 0 5px #ccc;
-	box-shadow: 0 0 5px #ccc;
-	border:  5px solid #fff;
+    max-height: 90vh;
 	left: -5px;
-	background: #fff;
 	
 	/*fix other elements on the page moving (on Chrome)*/
 	-webkit-transform: translatez(0);
@@ -48,8 +44,9 @@
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
 	position: absolute;
-	bottom: -30px;
+	top: 90vh;
 	width: 100%;
+    
 }
 
 /* LOADER */
@@ -76,6 +73,15 @@
 	padding-top: 20px;
 }
 
+.bx-wrapper2 .bx-pager {
+	text-align: center;
+	font-size: .85em;
+	font-family: Arial;
+	font-weight: bold;
+	color: #666;
+    top: 70vh;
+}
+
 .bx-wrapper .bx-pager .bx-pager-item,
 .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
 	display: inline-block;
@@ -84,52 +90,53 @@
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a {
-	background: #666;
+	
+    background: #cccccc;
 	text-indent: -9999px;
 	display: block;
 	width: 10px;
 	height: 10px;
 	margin: 0 5px;
-	outline: 0;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-	border-radius: 5px;
 }
 
-.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a:hover {
+    background: #69cce3;
+}
+
 .bx-wrapper .bx-pager.bx-default-pager a.active {
-	background: #000;
+    background: #238fce;
 }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
 
 .bx-wrapper .bx-prev {
 	left: 10px;
-	background: url(images/controls.png) no-repeat 0 -32px;
+	background: url(images/arrowLeft.png) no-repeat;
+    
 }
 
 .bx-wrapper .bx-next {
 	right: 10px;
-	background: url(images/controls.png) no-repeat -43px -32px;
+	background: url(images/arrowRight.png) no-repeat;
 }
 
 .bx-wrapper .bx-prev:hover {
-	background-position: 0 0;
+    background: url(images/arrowLeftH.png) no-repeat;
 }
 
 .bx-wrapper .bx-next:hover {
-	background-position: -43px 0;
+    background: url(images/arrowRightH.png) no-repeat;
 }
+
 
 .bx-wrapper .bx-controls-direction a {
 	position: absolute;
-	top: 50%;
-	margin-top: -16px;
-	outline: 0;
-	width: 32px;
-	height: 32px;
+	top: 45%;
+	width: 60px;
+	height: 60px;
 	text-indent: -9999px;
-	z-index: 9999;
 }
 
 .bx-wrapper .bx-controls-direction a.disabled {
@@ -140,6 +147,7 @@
 
 .bx-wrapper .bx-controls-auto {
 	text-align: center;
+    z-index: 100;
 }
 
 .bx-wrapper .bx-controls-auto .bx-start {
@@ -188,12 +196,27 @@
 
 .bx-wrapper .bx-caption {
 	position: absolute;
-	bottom: 0;
+	top: 50px;
 	left: 0;
-	background: #666\9;
-	background: rgba(80, 80, 80, 0.75);
 	width: 100%;
+    color: #858585;
+    font-size: 60px;
+    font-weight: 300;
+    z-index: 100;
 }
+
+.bx-wrapper .bx-caption-description {
+	position: absolute;
+	top: 200px;
+	left: 0;
+	width: 100%;
+    color: #858585;
+    font-size: 30px;
+    font-weight: 300;
+    z-index: 100;
+}
+
+
 
 .bx-wrapper .bx-caption span {
 	color: #fff;

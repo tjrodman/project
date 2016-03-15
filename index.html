@@ -39,46 +39,49 @@
 
         <nav id='tabs'>
             <ul>
-                <li><a href='#'>ABOUT</a>
+                <li><a href='#about'>ABOUT</a>
                 </li>
-                <li><a href='#'>BENEFITS</a>
+                <li><a href='#benefits'>BENEFITS</a>
                 </li>
-                <li><a href='#'>FEATURED SEMINARS</a>
+                <li><a href='#featured'>FEATURED SEMINARS</a>
                 </li>
-                <li><a href='#'>RESOURCES</a>
+                <li><a href='#resources'>RESOURCES</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <section class='slideshow'>
-        <!--to be centered and put over teh slideshow-->
-        <!--
-        <h1>First Year Seminars</h1>
-        <h1 id='subText'>at UC Davis</h1>
--->
+    <!--    <section class='slideshow'>-->
+    <section class='bx-wrapper'>
+        <div class='bx-controls-auto'></div>
 
+        <h2 class='bx-caption'>First Year Seminars</h2>
+        <p class='bx-caption-description'>At UC Davis</p>
         <ul class="bxslider">
-            
-            <li><img src="images/lecture.jpg" alt="First Year Seminar Intro" />
+
+            <li><img src="images/intro_lecture.jpg" alt="First Year Seminar Intro" />
             </li>
-            <li><img src="images/students_workshop.jpg" alt="workshops" />
+            <li><img src="images/intro_workshop.jpg" alt="workshops" />
+            </li>
+            <li><img src="images/intro_paint.jpg" alt="workshops" />
             </li>
 
         </ul>
 
+
     </section>
 
-    <section id='what'>
+    <a name="about"></a>
+    <section id='about'>
         <h2>What is a First Year Seminar?</h2>
         <ul>
-            <li><img src='images/test.png'>
+            <li><img src='images/test.png' alt='what is a seminar?'>
                 <p>Courses can range from 1-2 units either pass/no-pass or letter graded</p>
             </li>
-            <li><img src='images/group.png'>
+            <li><img src='images/group.png' alt='what is a seminar?'>
                 <p>First year seminars are courses open to first year students (with 45 units or less)</p>
             </li>
-            <li><img src='images/speech.png'>
+            <li><img src='images/speech.png' alt='what is a seminar?'>
                 <p>Each seminar has a 19 student limit to allow for small group discussions and the ability to work closely with your professor</p>
             </li>
         </ul>
@@ -86,25 +89,28 @@
         <div id='line2'></div>
     </section>
 
+
+    <a name="benefits"></a>
     <section>
         <div id='box'>
             <h2>Benefits to First Year Seminars</h2>
             <ul>
-                <li><img src='images/benefit_meet.png' width=150>
+                <li><img src='images/benefit_meet.png' alt='benefits of seminars' width=160>
                     <p>Utilize this excellent opportunity to meet new people and form connections</p>
                 </li>
-                <li><img src='images/benefit_introduce.png' width=150>
+                <li><img src='images/benefit_introduce.png' alt='benefits of seminars' width=160>
                     <p>Introduce yourself to new topics without having a large course load</p>
                 </li>
-                <li><img src='images/benefit_lab.png'>
+                <li><img src='images/benefit_lab.png' alt='benefits of seminars' width=160>
                     <p>Gain hands on experience in various labs and outdoor experience</p>
                 </li>
             </ul>
         </div>
-
-
     </section>
 
+
+    <a name="featured"></a>
+    <!--
     <section id='seminars'>
         <ul class="bxslider">
             <li>
@@ -117,21 +123,70 @@
 
 
     </section>
+-->
+    <section id='featured'>
+        <section class='bx-wrapper2'>
 
+            <h2>Featured Seminars</h2>
+            <ul class="bxslider">
+
+                <li>
+                    <img src='images/featured_cheese.png' alt='theres life after cheddar' width=160>
+                    <h2>There's Life after Cheddar</h2>
+                    <h3>Food and Culinary Sciences</h3>
+                    <p>You cheddar believe it!</p>
+                    <p>Did you know that cheese was never meant to be made or consumed by humans? In case you're still in disbelief, yes, this class is all about cheese!</p>
+                </li>
+                
+                <li>
+                    <img src='images/featured_zombies.png' alt='zombies' width=160>
+                    <h2>Zombies</h2>
+                    <h3>Entertainment, Arts</h3>
+                    <p>Description</p>
+                </li>
+
+                <li>
+                    <img src='images/featured_bb.png' alt='breaking bad' width=160>
+                    <h2>Ethics, Morality, and Breaking Bad</h2>
+                    <h3>Lifestyle, Culture, Religion, Ethics</h3>
+                    <p>Unfortunately, this course isn't taught by Walter White himself, but the course introduces students to critical thinking and ethical decision making using the popular television show, Breaking Bad. topics and discussions will ask questions like "what is right?" and "what is wrong?" as well as to what extent can the ends justify the means?</p>
+                </li>
+                
+                <li>
+                    <img src='images/featured_airplane.png' alt='airplanes'>
+                    <h2>How to Make Airplanes Fly</h2>
+                    <h3>Science, Research, Environment</h3>
+                    <p>Description</p>
+                </li>
+                
+                <li>
+                    <img src='images/featured_art.png' alt='art'>
+                    <h2>TBA</h2>
+                    <h3>TBA</h3>
+                    <p>Description</p>
+                </li>
+            </ul>
+
+
+        </section>
+    </section>
+
+
+    <a name="resources"></a>
     <section id='now'>
         <h2>There's No Better Time Than Now</h2>
         <p id='nowP'>There are over 200 first year seminars to choose from and new seminars are offered every quarter!</p>
 
         <div id='box2'>
             <ul>
-                <li><img src='images/one.png'>
+                <li><img src='images/one.png' alt='step 1'>
                     <p>Find a specific course via the UC Davis course search tool</p>
                     <a href='https://registrar.ucdavis.edu/courses/search/index.cfm' target="_blank">GO!</a>
                 </li>
-                <li><img src='images/two.png'>
+                <li><img src='images/two.png' alt='step 2'>
                     <p>Copy or write down the 5-digit CRN number</p>
                 </li>
-                <li><img src='images/three.png'>
+                <li><img src='images/three.png' alt='step 3'>
                     <p>Use 5-digit CRN number to register via UC Davis course register website</p>
                     <a href='https://sisweb.ucdavis.edu' target="_blank">SISWEB</a>
                 </li>
@@ -146,16 +201,16 @@
                     <h5>NAVIGATE</h5>
                 </li>
                 <li>
-                    <a href='#'>About</a>
+                    <a href='#about'>About</a>
                 </li>
                 <li>
-                    <a href='#'>Benefits</a>
+                    <a href='#benefits'>Benefits</a>
                 </li>
                 <li>
-                    <a href='#'>Featured Seminars</a>
+                    <a href='#featured'>Featured Seminars</a>
                 </li>
                 <li>
-                    <a href='#'>Resources</a>
+                    <a href='#resources'>Resources</a>
                 </li>
             </ul>
         </nav>
@@ -185,7 +240,7 @@
                 <li>
                     <a href='https://tjrodman.github.io/ex1'>Back to Portal</a>
                 </li>
-                 <!--validation-->
+                <!--validation-->
                 <li> <a class="bottomSpace" target="_blank" href="http://validator.w3.org/check?uri=referer">VALID HTML 5</a></li>
                 <li><a class="bottomSpace" target="_blank" href="http://jigsaw.w3.org/css-validator/check/referer">VALID CSS</a></li>
             </ul>
